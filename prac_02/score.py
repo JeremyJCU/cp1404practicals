@@ -29,5 +29,5 @@ def determine_result(score):
     else:
         return "Excellent"
 
-
-main()
+if __name__ == "main()":
+    main()
