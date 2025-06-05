@@ -14,9 +14,6 @@ def main():
             fahrenheit = convert_celsius_to_fahrenheit(celsius)
             print(f"Result: {fahrenheit:.2f} F")
         elif choice == "F":
-            # TODO: Write this section to convert F to C and display the result
-            # Hint: celsius = 5 / 9 * (fahrenheit - 32)
-            # Remove the "pass" statement when you are done. It's a placeholder.
             fahrenheit = float(input("Fahrenheit: "))
             celsius = convert_fahrenheit_to_celsius(fahrenheit)
             print(f"Result: {celsius:.2f} C")
