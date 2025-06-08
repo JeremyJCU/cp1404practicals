@@ -22,23 +22,20 @@ def main():
     while not is_valid_password(password):
         print("Invalid password!")
         password = input("> ")
-
+    print(f"Your {len(password)}-character password is valid: {password}")
 
 def is_valid_password(password):
     """Determine if the provided password is valid."""
     length = len(password)
-    print(f"length {length}")
     if MIN_LENGTH <= length <= MAX_LENGTH:
         is_valid_length = True
     else:
         is_valid_length = False
 
-    print("is valid length", is_valid_length)
     number_of_lower = 0
     number_of_upper = 0
     number_of_digit = 0
     number_of_special = 0
-
 
     for character in password:
         if character.islower():
@@ -52,8 +49,6 @@ def is_valid_password(password):
         else:
             return False
 
-    print(f"lower: {number_of_lower} upper: {number_of_upper} digit: {number_of_digit} special: {number_of_special}")
-    # print(f"IS_SPECIAL_CHARACTER_REQUIRED {IS_SPECIAL_CHARACTER_REQUIRED}")
     if not IS_SPECIAL_CHARACTER_REQUIRED:
         if number_of_lower == 0 or number_of_upper == 0 or number_of_digit == 0 or not is_valid_length:
             return False
