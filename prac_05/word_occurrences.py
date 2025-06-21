@@ -1,6 +1,9 @@
 """
 CP1404/CP5632 Practical
 A program to count the occurrences of words in a string
+Word Occurrences Time Estimate:
+Estimate: 30 minutes
+Actual: 60 minutes
 """
 WORD_TO_COUNT = {'a': 0, 'collection': 0, 'fun': 0, 'is': 0, 'it': 0, 'nice': 0, 'of': 0, 'thing': 0, 'this': 0,
                  'words': 0}
