@@ -3,7 +3,7 @@
 
 class Car:
     """Represent a Car object."""
-
+    #5
     def __init__(self, fuel=0, name=''):
         """Initialise a Car instance.
 
@@ -11,6 +11,7 @@ class Car:
         """
         self.fuel = fuel
         self._odometer = 0
+        #5
         self.name = name
 
     def add_fuel(self, amount):
