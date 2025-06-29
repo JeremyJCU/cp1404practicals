@@ -1,7 +1,7 @@
 """CP1404/CP5632 Practical
 programming language Time Estimate:
 Estimate: 60 minutes
-Actual:   minutes
+Actual:  120 minutes
 """
 
 class ProgrammingLanguage:
