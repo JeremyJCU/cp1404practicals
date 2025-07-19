@@ -1,7 +1,7 @@
 """CP1404/CP5632 Practical
 More Guitars! :
-Estimate: 120 12:43 minutes
-Actual:   minutes
+Estimate: 120  minutes
+Actual:  244.20000000000002 minutes
 """
 import csv
 from collections import namedtuple
