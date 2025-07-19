@@ -19,7 +19,7 @@ class Guitar:
 
     def __repr__(self):
         """Display general Guitar information."""
-        return f"{self.name} ({self.year}) : ${self.cost:,.2f}"
+        return f"{self.name},{self.year},{self.cost:.2f}"
 
     def __lt__(self, other):
         """Guitar comparison operator."""
