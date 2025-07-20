@@ -24,7 +24,7 @@ class Project:
 
     def __repr__(self):
         """Display general Guitar information."""
-        return f"{self.name},{self.start_date},{self.priority},{self.cost_estimate},{self.completion_percentage}, self.id: {self.id}"
+        return f"{str(self.name)}\t{str(self.start_date)}\t{str(self.priority)}\t{str(self.cost_estimate)}\t{str(self.completion_percentage)}"
 
     def __lt__(self, other):
         return self.priority < other.priority
