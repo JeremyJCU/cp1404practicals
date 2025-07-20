@@ -1,10 +1,10 @@
 """CP1404/CP5632 Practical
 Project Management Program! :
-Estimate: 255 19:38  minutes
-Actual:   minutes
+Estimate: 255 minutes
+Actual:  736 minutes
 """
 
-import datetime
+from datetime import datetime
 import uuid
 
 
@@ -19,19 +19,21 @@ class Project:
         self.id = uuid.uuid4()
 
     def __str__(self):
-        date = self.start_date.strftime("%d/%m/%Y")
-        return f"{self.name}, start:{date}, priority {self.priority}, estimate: ${self.cost_estimate:,.2f}, completion: {self.completion_percentage}%"
+        aus_date = self.start_date.strftime("%d/%m/%Y")
+        return f"{self.name}, start:{aus_date}, priority {self.priority}, estimate: ${self.cost_estimate:,.2f}, completion: {self.completion_percentage}%"
 
     def __repr__(self):
         """Display general Guitar information."""
-        return f"{str(self.name)}\t{str(self.start_date)}\t{str(self.priority)}\t{str(self.cost_estimate)}\t{str(self.completion_percentage)}"
+        aus_date = self.start_date.strftime("%d/%m/%Y")
+        return f"{str(self.name)}\t{aus_date}\t{str(self.priority)}\t{str(self.cost_estimate)}\t{str(self.completion_percentage)}"
 
     def __lt__(self, other):
         return self.priority < other.priority
 
 def testing():
-    date = datetime.datetime.strptime("30/08/1977", "%d/%m/%Y").date()
+    date = datetime.strptime("30/08/1977", "%d/%m/%Y").date()
     p1 = Project("Build Car Park",date,2,	600000.0,	95)
+    print(p1.start_date)
     date = p1.start_date.strftime("%d/%m/%Y")
     print(date)
     # print(p1)

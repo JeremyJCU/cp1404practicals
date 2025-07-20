@@ -1,9 +1,9 @@
 """CP1404/CP5632 Practical
 Project Management Program! :
-Estimate: 255 19:38-10:40 9:47-  minutes
-Actual:   minutes
+Estimate: 255 minutes
+Actual:  736 minutes
 """
-import datetime
+from datetime import datetime
 import csv
 from collections import namedtuple
 
@@ -197,6 +197,7 @@ def load_project():
                 is_valid_input = True
         except FileNotFoundError:
             print(INPUT_ERROR)
+    print(f"{len(projects)} projects loaded.")
     return projects, first_line
 
 
@@ -212,7 +213,7 @@ def save_project(projects, project_headers):
 
 def convert_to_date(string_date):
     """Convert a string date to datetime."""
-    date = datetime.datetime.strptime(string_date, "%d/%m/%Y").date()
+    date = datetime.strptime(string_date, "%d/%m/%Y").date()
     return date
 
 
