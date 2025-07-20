@@ -1,7 +1,11 @@
 # Practical 7
 
 ## Repository information:
-Practical 7 exercises on OOP2 and markup.
+Practical 7 exercises on classes, functions and file input and output.
+Various exception handling and error handling also carried out. Lastly
+markup was filled in. Guitars exercise took 244 minutes 
+and project_managment took 736 minutes. I am not sure why
+we are being set full assignments for practicals.
 
 ### Developer information:
 Jeremy Wiseman student of CP1404 at James Cook University.
