@@ -5,6 +5,8 @@ Actual:   minutes
 """
 
 import datetime
+import uuid
+
 
 class Project:
 
@@ -14,6 +16,7 @@ class Project:
         self.priority = priority
         self.cost_estimate = cost_estimate
         self.completion_percentage = completion_percentage
+        self.id = uuid.uuid4()
 
     def __str__(self):
         date = self.start_date.strftime("%d/%m/%Y")
@@ -21,7 +24,7 @@ class Project:
 
     def __repr__(self):
         """Display general Guitar information."""
-        return f"{self.name},{self.start_date},{self.priority},{self.cost_estimate},{self.completion_percentage}"
+        return f"{self.name},{self.start_date},{self.priority},{self.cost_estimate},{self.completion_percentage}, self.id: {self.id}"
 
     def __lt__(self, other):
         return self.priority < other.priority
