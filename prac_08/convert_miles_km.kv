@@ -1,0 +1,31 @@
+BoxLayout:
+    orientation: 'vertical'
+    BoxLayout:
+        orientation: 'horizontal'
+        TextInput:
+            background_color: (1, 1, 1, 1)
+            foreground_color: (0,0,0,1)
+            id: input_miles
+            text: '34'
+            font_size: 100
+            on_text: ''
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint_x: 0.25
+            Button:
+                font_size: 48
+                text: 'Up'
+                on_press: app.handle_kilometer_change(True)
+            Button:
+                font_size: 48
+                text: 'Down'
+                on_press: app.handle_kilometer_change(False)
+    Button:
+        font_size: 48
+        text: 'Convert to miles to kilometers'
+        on_press: app.handle_calculation()
+    Label:
+        id: output_label
+        font_size: 100
+        text: app.converted_distance
+        color: (1,1,0,1)
