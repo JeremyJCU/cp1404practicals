@@ -2,6 +2,8 @@
 CP1404/CP5632 Practical
 Taxi class
 """
+from decimal import Decimal, ROUND_HALF_UP
+from math import ceil
 from car import Car
 
 
@@ -20,7 +22,7 @@ class Taxi(Car):
 
     def get_fare(self):
         """Return the price for the taxi trip."""
-        return self.price_per_km * self.current_fare_distance
+        return round(self.price_per_km * self.current_fare_distance, 1)
 
     def start_fare(self):
         """Begin a new fare."""
@@ -32,11 +34,12 @@ class Taxi(Car):
         self.current_fare_distance += distance_driven
         return distance_driven
 
-
-if __name__ == '__main__':
-    taxi = Taxi("Prius 1", 100)
-#     taxi.drive(40)
-    print(taxi)
+# if __name__ == '__main__':
+# pass
+# taxi = Taxi("Prius 1", 100)
+# taxi.drive(95)
+# print(taxi.get_fare())
+# print(Decimal(116.86))
 #     taxi.start_fare()
 #     taxi.drive(100)
 #     print(taxi)
