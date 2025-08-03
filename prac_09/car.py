@@ -34,10 +34,10 @@ class Car:
 
     #5
     def __str__(self):
-        return f"{self.name}, fuel = {self.fuel} odometer = {self._odometer}"
+        return f"{self.name}, fuel = {self.fuel}, odometer = {self._odometer}"
 
 if __name__ == '__main__':
     car = Car(100, "Car", )
-    car.add_fuel(100)
-    car.drive(100)
+    # car.add_fuel(100)
+    # car.drive(100)
     print(car)

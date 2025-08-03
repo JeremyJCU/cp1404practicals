@@ -33,10 +33,10 @@ class Taxi(Car):
         return distance_driven
 
 
-# if __name__ == '__main__':
-#     taxi = Taxi("Prius 1", 100)
+if __name__ == '__main__':
+    taxi = Taxi("Prius 1", 100)
 #     taxi.drive(40)
-#     print(taxi)
+    print(taxi)
 #     taxi.start_fare()
 #     taxi.drive(100)
 #     print(taxi)
