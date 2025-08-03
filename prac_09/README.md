@@ -1,7 +1,5 @@
 # Practical 09
 
-# Practical 08
-
 ## Repository information:
 Practical 9
 
