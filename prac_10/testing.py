@@ -9,7 +9,7 @@ from prac_06.car import Car
 
 def repeat_string(s, n):
     """Repeat string s, n times, with spaces in between."""
-    return s * n
+    return ((s + ' ') * n).strip()
 
 
 def is_long_word(word, length=5):
@@ -46,6 +46,9 @@ def run_tests():
     # using the value passed in or the default
     # You should test both of these
     car = Car(fuel=10)
+    assert car.fuel == 10, "Car does not set fuel correctly"
+    car_empty = Car()
+    assert car_empty.fuel == 0, "Car does not set default parameter fuel value correctly"
 
 
 run_tests()
