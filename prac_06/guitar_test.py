@@ -29,19 +29,19 @@ def main():
 
     print()
     print("testing class age functions")
-    expected_output = gibson.get_age() >= AGE
+    expected_output = gibson.age() >= AGE
     test_guitar(expected_output, gibson, 'vintage')
 
-    expected_output = fener.get_age() >= AGE
+    expected_output = fener.age() >= AGE
     test_guitar(expected_output, fener, 'vintage')
 
-    expected_output = line.get_age() >= AGE
+    expected_output = line.age() >= AGE
     test_guitar(expected_output, line, 'vintage')
 
 def test_guitar(expected_output, guitar, test_type):
     """Generic test function used for all tests"""
     if test_type == 'age':
-        print(f"Expected {expected_output}. got {guitar.get_age()}")
+        print(f"Expected {expected_output}. got {guitar.age()}")
     elif test_type == 'vintage':
         print(f"Expected {expected_output}. got {guitar.is_vintage()}")
 
