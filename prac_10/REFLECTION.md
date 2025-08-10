@@ -61,12 +61,12 @@ used in code. Highlighted that Docstrings should be used when creating functions
 
 prac_07 was too large. The programming language activity should have been an extension exercise. I think
 the core thing I would change about this subject is removing road blocks that get in the way of work. While
-doing the course the instructions for setting up development environment for the MacOS changed. Also I found
+doing the course the instructions for setting up development environment for the MacOS changed. Also, I found
 it very difficult to get help with software setup issues I was having with development software. For example
 I had a lot of issues using Python console to try out tasks because of a install setup issue on my Apple 
-computer. I did always find that I was behind most of the time, even after dropping my other degree
-subject. So with all programming and lecture content there is no time to troubleshoot software issues that
-occur from a incorrect installation setup.
+computer. To do code reviews correctly it does take a lot of time. I understand from PASS that teaching is the
+best way to learn. But for a Trimester subject the code review tasks should be just limited to one prac exercise,
+instead of all of them. 
 
 ### What did you do really well for practicals in this subject?
 
